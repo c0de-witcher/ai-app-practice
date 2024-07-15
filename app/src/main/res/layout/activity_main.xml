@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat EP"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"/>
+
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:rowCount="4"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/bot_chat"
+                android:src="@drawable/chat_bot"
+                app:shapeAppearanceOverlay="@style/circle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Chat with AI"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/camera_search"
+                android:src="@drawable/updated_camera"
+                app:shapeAppearanceOverlay="@style/circle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genrate Image"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_margin="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+</LinearLayout>
